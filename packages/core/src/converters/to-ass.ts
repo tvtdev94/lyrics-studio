@@ -2,11 +2,11 @@ import type { LyricsLine, StyleConfig } from "../types.js";
 import { secondsToAssTime } from "../utils/time-utils.js";
 
 const DEFAULT_STYLE: Required<StyleConfig> = {
-  fontFamily: "Noto Sans",
-  fontSize: 24,
+  fontFamily: "Arial",
+  fontSize: 58,
   textColor: "&H00FFFFFF",
   highlightColor: "&H0000FFFF",
-  backgroundColor: "&H80000000",
+  backgroundColor: "&H40000000",
   backgroundOpacity: 0.5,
 };
 
@@ -32,7 +32,7 @@ export function toAss(
   const styles = [
     "[V4+ Styles]",
     "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
-    `Style: Default,${style.fontFamily},${style.fontSize},${style.textColor},${style.highlightColor},${style.backgroundColor},&H00000000,0,0,0,0,100,100,0,0,1,2,1,2,20,20,30,1`,
+    `Style: Default,${style.fontFamily},${style.fontSize},${style.textColor},${style.highlightColor},${style.backgroundColor},&H00000000,-1,0,0,0,100,100,0,0,1,3,1,2,30,30,40,1`,
     "",
   ].join("\n");
 
