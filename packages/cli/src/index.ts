@@ -5,6 +5,7 @@ import { createCommand } from "./commands/create.js";
 import { subtitleCommand } from "./commands/subtitle.js";
 import { parseCommand } from "./commands/parse.js";
 import { replaceSubCommand } from "./commands/replace-sub.js";
+import { reupCommand } from "./commands/reup.js";
 
 const program = new Command();
 
@@ -17,5 +18,6 @@ program.addCommand(createCommand);
 program.addCommand(subtitleCommand);
 program.addCommand(parseCommand);
 program.addCommand(replaceSubCommand);
+program.addCommand(reupCommand);
 
 program.parse();
