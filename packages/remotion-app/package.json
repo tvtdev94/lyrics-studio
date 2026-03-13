@@ -1,0 +1,29 @@
+{
+  "name": "@lyrics-studio/remotion-app",
+  "version": "1.0.0",
+  "description": "Remotion compositions for lyrics video rendering",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "remotion studio src/entry.ts",
+    "studio": "remotion studio src/entry.ts",
+    "render": "remotion render --entry-point src/entry.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lyrics-studio/core": "workspace:*",
+    "@remotion/cli": "4.0.242",
+    "@remotion/bundler": "4.0.242",
+    "@remotion/renderer": "4.0.242",
+    "remotion": "4.0.242",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "typescript": "5.7.3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@lyrics-studio/cli",
+  "version": "1.0.0",
+  "description": "CLI tool for lyrics video creation",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "lyrics-studio": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lyrics-studio/core": "workspace:*",
+    "chalk": "5.4.1",
+    "commander": "12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "typescript": "5.7.3"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "font": "Noto Sans",
+  "fontSize": 24,
+  "primaryColor": "&H00FFFFFF",
+  "outlineColor": "&H80000000",
+  "outline": 2,
+  "alignment": 2,
+  "marginV": 30
+}
